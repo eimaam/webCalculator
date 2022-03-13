@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    --grey: rgb(175, 173, 173);
+    --black: black;
+    --white: white;
+}
+body{
+    background-color: var(--grey);
+    margin: 0;
+}
+.main{
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    padding: 2rem;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--grey);
+    text-shadow: 2px 2px 2px white;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+form{
+    width: 60%;
+    margin: 15vh auto;
+    padding: 0;
+}
+input.display{
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: end;
+}
+.display:hover{
+    transform: scale(1);
+}
+input{
+    width: 100px;
+    margin: 0.5rem auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: var(--black);
+    border: 0;
+    border-radius: 1rem;
+    background-color: var(--grey);
+    box-shadow: 5px 5px 12px rgb(114, 112, 112), 
+                -5px -5px 12px rgb(219, 213, 213);
+}
+input:active{
+    box-shadow: 5px 5px 12px rgb(114, 112, 112), 
+                inset -5px -5px 12px rgb(219, 213, 213);
+}
+input:hover{
+    transform: scale(1.03);
+}
+@media screen and (max-width: 480px){
+    .main{
+        width: 100%;
+        margin: 100px auto;
+    }
+    .flex {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-evenly;
+    }
+    form{
+        width: 100%;
+        margin: auto;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 12px rgb(114, 112, 112), 
+                    -5px -5px 12px rgb(219, 213, 213);
+    }
+    input.display{
+        margin-top: 1rem;
+    }
+    input{
+        margin: 0.5rem 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
+        padding: 1rem 1.2rem;
+        color: var(--black);
+        border-radius: 1rem;
+        background-color: var(--grey);
+        box-shadow: 5px 5px 12px rgb(114, 112, 112), 
+                    -5px -5px 12px rgb(219, 213, 213);
+    }
+}
